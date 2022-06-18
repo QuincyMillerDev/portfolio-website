@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-import LandingSection from '../components/LandingSection/index';
+import LandingSection from '../components/LandingSection';
 import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
+import Footer from '../components/footer';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
     <InfoSection {...homeObjOne}/>
     <InfoSection {...homeObjTwo}/>
     <InfoSection {...homeObjThree}/>
+    <Footer />
     </>
   );
 };
