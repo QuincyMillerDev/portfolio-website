@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
+import pdf from '../../static/Quincy Miller - Resume.pdf'
 import { 
   Nav, 
   NavbarContainer, 
@@ -34,6 +35,10 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
+  const onResumeClick = () => {
+    window.open(pdf);
+  }
+
   return (
     <>
       <IconContext.Provider value={{ color: '#fff'}}>
@@ -56,30 +61,30 @@ const Navbar = ({ toggle }) => {
                     </NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="discover"
+                    <NavLinks to="skills"
                     smooth={true}
                     duration={500}
                     spy={true}
                     exact='true'
                     offset={-78}
                     >
-                      Discover
+                      Skills
                     </NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="services"
+                    <NavLinks to="projects"
                     smooth={true}
                     duration={500}
                     spy={true}
                     exact='true'
                     offset={-78}
                     >
-                      Services
+                      Projects
                     </NavLinks>
                   </NavItem>
                 </NavMenu>
                 <NavBtn>
-                  <NavBtnLink  to="/signin">IM BUTTON</NavBtnLink>
+                  <NavBtnLink  to="/" onClick={onResumeClick}>Resume</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

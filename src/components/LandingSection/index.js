@@ -28,11 +28,17 @@ const LandingSection = () => {
         <LandingContent>
             <LandingH1>Hi, I'm Quincy Miller</LandingH1>
             <LandingP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Welcome to my portfolio, a showcase of who I am as a developer. I'm a software engineer who specializes in creating advanced digital experiences. Currently, I'm actively developing large-scale power-grid software solutions at Hubbell.
             </LandingP>
             <LandingBtnWrapper>
-                <Button to="skills" onMouseEnter={onHover} onMouseLeave={onHover}>
-                    Skills {hover ? <ArrowForward /> : <ArrowRight/>}
+                <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-78}
+                >
+                    Let's get started {hover ? <ArrowForward /> : <ArrowRight/>}
                 </Button>
             </LandingBtnWrapper>
         </LandingContent>
