@@ -8,12 +8,14 @@ export const homeObjOne = {
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'hi I button',
-    imgStart: false,
+    imgStart: true,
     img:  require("../../images/photo-1.JPG"),
     alt: 'error404',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    textAlign: false,
+    buttonAlign: true
 };
 
 export const homeObjTwo = {
@@ -22,13 +24,15 @@ export const homeObjTwo = {
     lightText: false,
     topLineColor: false,
     lightTextDesc: false,
-    topLine: 'Lorem Ipsum',
+    topLine: 'skills',
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'hi I button too',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    textAlign: true,
+    buttonAlign: false
 };
 
 export const homeObjThree = {
@@ -42,11 +46,13 @@ export const homeObjThree = {
     description: 'subtitle filler text',
     buttonLabel: 'hi I button three',
     imgStart: false,
-    img:  require("../../images/photo-5.JPG"),
+    img:  require("../../images/photo-3.JPG"),
     alt: 'error404',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    textAlign: false,
+    buttonAlign: true
 };
 
 export const homeObjFour = {
@@ -55,11 +61,13 @@ export const homeObjFour = {
     topLineColor: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Lorem Ipsum',
+    topLine: 'Contact',
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'Say Hello',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    textAlign: true,
+    buttonAlign: false
 };

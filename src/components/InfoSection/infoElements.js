@@ -59,6 +59,7 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    text-align: ${({textAlign}) => (textAlign ? 'center' : 'null')};
 `;
 
 export const Heading = styled.h1`
@@ -67,6 +68,7 @@ export const Heading = styled.h1`
     line-height: 1.1;
     font-weight: 600;
     color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+    text-align: ${({textAlign}) => (textAlign ? 'center' : 'null')};
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -79,11 +81,12 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? ' #010606' : '#fff')};
+    text-align: ${({textAlign}) => (textAlign ? 'center' : 'null')};
 `;
 
 export const BtnWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: ${({buttonAlign}) => (buttonAlign ? 'flex-start' : 'center')};
 `;
 
 export const ImgWrap = styled.div`

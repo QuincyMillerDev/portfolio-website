@@ -15,7 +15,7 @@ import {
  } from './infoElements';
 import { Button } from '../ButtonElements';
 
-const InfoSection = ({ lightBg, id, imgStart, topLine, topLineColor, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2, columns }) => {
+const InfoSection = ({ lightBg, id, imgStart, topLine, topLineColor, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2, columns, textAlign, buttonAlign }) => {
   return (
     <>
     <InfoContainer lightBg={lightBg} id={id}>
@@ -23,10 +23,10 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, topLineColor, lightText, 
             <InfoRow imgStart={imgStart}>
                 <Column1>
                 <TextWrapper>
-                    <TopLine topLineColor={topLineColor}>{topLine}</TopLine>
-                    <Heading lightText={lightText}>{headLine}</Heading>
-                    <Subtitle darkText={darkText}>{description}</Subtitle>
-                    <BtnWrap>
+                    <TopLine topLineColor={topLineColor} textAlign={textAlign}>{topLine}</TopLine>
+                    <Heading lightText={lightText} textAlign={textAlign}>{headLine}</Heading>
+                    <Subtitle darkText={darkText} textAlign={textAlign}>{description}</Subtitle>
+                    <BtnWrap buttonAlign={buttonAlign}>
                         <Button to="home"
                         smooth={true}
                         duration={500}
