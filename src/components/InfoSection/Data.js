@@ -2,6 +2,7 @@ export const homeObjOne = {
     id: 'about',
     lightBg: false,
     lightText: true,
+    topLineColor: true,
     lightTextDesc: true,
     topLine: 'Lorem Ipsum',
     headLine: 'filler text more filler',
@@ -19,14 +20,12 @@ export const homeObjTwo = {
     id: 'skills',
     lightBg: true,
     lightText: false,
+    topLineColor: false,
     lightTextDesc: false,
     topLine: 'Lorem Ipsum',
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'hi I button too',
-    imgStart: true,
-    img:  require("../../images/photo-2.JPG"),
-    alt: 'error404',
     dark: false,
     primary: false,
     darkText: true
@@ -35,6 +34,7 @@ export const homeObjTwo = {
 export const homeObjThree = {
     id: 'projects',
     lightBg: false,
+    topLineColor: true,
     lightText: true,
     lightTextDesc: true,
     topLine: 'Lorem Ipsum',
@@ -47,4 +47,19 @@ export const homeObjThree = {
     dark: true,
     primary: true,
     darkText: false
+};
+
+export const homeObjFour = {
+    id: 'contact',
+    lightBg: true,
+    topLineColor: false,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Lorem Ipsum',
+    headLine: 'filler text more filler',
+    description: 'subtitle filler text',
+    buttonLabel: 'Say Hello',
+    dark: false,
+    primary: false,
+    darkText: true
 };

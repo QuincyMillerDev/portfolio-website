@@ -15,15 +15,15 @@ import {
  } from './infoElements';
 import { Button } from '../ButtonElements';
 
-const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2 }) => {
+const InfoSection = ({ lightBg, id, imgStart, topLine, topLineColor, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2, columns }) => {
   return (
     <>
     <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
+        <InfoWrapper columns={columns}>
             <InfoRow imgStart={imgStart}>
                 <Column1>
                 <TextWrapper>
-                    <TopLine>{topLine}</TopLine>
+                    <TopLine topLineColor={topLineColor}>{topLine}</TopLine>
                     <Heading lightText={lightText}>{headLine}</Heading>
                     <Subtitle darkText={darkText}>{description}</Subtitle>
                     <BtnWrap>

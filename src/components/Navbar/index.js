@@ -82,6 +82,17 @@ const Navbar = ({ toggle }) => {
                       Projects
                     </NavLinks>
                   </NavItem>
+                  <NavItem>
+                    <NavLinks to="contact"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-78}
+                    >
+                      Contact
+                    </NavLinks>
+                  </NavItem>
                 </NavMenu>
                 <NavBtn>
                   <NavBtnLink  to="/" onClick={onResumeClick}>Resume</NavBtnLink>

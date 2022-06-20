@@ -35,35 +35,11 @@ const Footer = () => {
                         <FooterLinkTitle> About Us </FooterLinkTitle>
                             <FooterLink to="/">Link numba 1</FooterLink>
                             <FooterLink to="/">Link numba 2</FooterLink>
-                            <FooterLink to="/">link three</FooterLink>
-                            <FooterLink to="/">link 5</FooterLink>
-                            <FooterLink to="/">COPYRIGHTED</FooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle> Resume </FooterLinkTitle>
                             <FooterLink to="/">Link numba 1</FooterLink>
                             <FooterLink to="/">Link numba 2</FooterLink>
-                            <FooterLink to="/">link three</FooterLink>
-                            <FooterLink to="/">link 5</FooterLink>
-                            <FooterLink to="/">COPYRIGHTED</FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle> About Us </FooterLinkTitle>
-                            <FooterLink to="/">Link numba 1</FooterLink>
-                            <FooterLink to="/">Link numba 2</FooterLink>
-                            <FooterLink to="/">link three</FooterLink>
-                            <FooterLink to="/">link 5</FooterLink>
-                            <FooterLink to="/">COPYRIGHTED</FooterLink>
-                    </FooterLinkItems>
-                    <FooterLinkItems>
-                        <FooterLinkTitle> Resume </FooterLinkTitle>
-                            <FooterLink to="/">Link numba 1</FooterLink>
-                            <FooterLink to="/">Link numba 2</FooterLink>
-                            <FooterLink to="/">link three</FooterLink>
-                            <FooterLink to="/">link 5</FooterLink>
-                            <FooterLink to="/">COPYRIGHTED</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
