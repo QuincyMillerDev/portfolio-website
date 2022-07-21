@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
 
 export const LandingContainer = styled.div`
     background: #0c0c0c;
@@ -63,11 +62,11 @@ export const LandingH1 = styled.h1`
     font-size: 48px;
     text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen {
         font-size: 48px;
     }
 
-    @media screen and (max-width: 480px){
+    @media screen {
         font-size: 32px;
     }
 `;
@@ -87,23 +86,6 @@ export const LandingP = styled.p`
         font-size: 18px;
     }
 `;
-
-export const LandingBtnWrapper = styled.div`
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-export const ArrowForward = styled(MdArrowForward)`
-    margin-left: 8px;
-    font-size: 20px;
-`;
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
-`
 
 export const ColorText = styled.span`
     color: #2BCACA;

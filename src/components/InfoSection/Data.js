@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightText: true,
     topLineColor: true,
     lightTextDesc: true,
-    topLine: 'Lorem Ipsum',
+    topLine: '01. About Me',
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'hi I button',
@@ -15,7 +15,8 @@ export const homeObjOne = {
     primary: true,
     darkText: false,
     textAlign: false,
-    buttonAlign: true
+    buttonAlign: true,
+    buttonAppear: false
 };
 
 export const homeObjTwo = {
@@ -24,7 +25,7 @@ export const homeObjTwo = {
     lightText: false,
     topLineColor: false,
     lightTextDesc: false,
-    topLine: 'skills',
+    topLine: '02. Skills',
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'hi I button too',
@@ -32,7 +33,8 @@ export const homeObjTwo = {
     primary: false,
     darkText: true,
     textAlign: true,
-    buttonAlign: false
+    buttonAlign: false,
+    buttonAppear: false
 };
 
 export const homeObjThree = {
@@ -41,7 +43,7 @@ export const homeObjThree = {
     topLineColor: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Lorem Ipsum',
+    topLine: '03. Experience',
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'hi I button three',
@@ -52,7 +54,8 @@ export const homeObjThree = {
     primary: true,
     darkText: false,
     textAlign: false,
-    buttonAlign: true
+    buttonAlign: true,
+    buttonAppear: false
 };
 
 export const homeObjFour = {
@@ -61,7 +64,7 @@ export const homeObjFour = {
     topLineColor: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Contact',
+    topLine: '04. Contact',
     headLine: 'filler text more filler',
     description: 'subtitle filler text',
     buttonLabel: 'Say Hello',
@@ -69,5 +72,6 @@ export const homeObjFour = {
     primary: false,
     darkText: true,
     textAlign: true,
-    buttonAlign: false
+    buttonAlign: false,
+    buttonAppear: true
 };
