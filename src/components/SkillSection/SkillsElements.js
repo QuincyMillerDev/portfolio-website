@@ -10,11 +10,11 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsWrapper = styled.div`
-  display: grid;
+  display: flex;
   z-index: 1;
   height: 1000px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -23,31 +23,31 @@ export const SkillsWrapper = styled.div`
 
 export const SkillsRow = styled.div`
   display: flex;
-  grid-auto-columns: minmax(auto, 1fr);
+  grid-auto-rows: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: "a b";
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: "a b";
   }
 `;
 
-export const Column1 = styled.div`
+export const Row1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: "a";
 `;
 
-export const Column2 = styled.div`
+export const Row2 = styled.div`
+  position: absolute;
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: "b";
+  justify-content: center;
 `;
 
 export const TextWrapper = styled.div`
   max-width: 500px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  margin-top: -400px;
+  position: relative;
 `;
 
 export const TopLine = styled.p`
@@ -62,7 +62,6 @@ export const TopLine = styled.p`
 `;
 
 export const Subtitle = styled.p`
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
@@ -82,4 +81,41 @@ export const ATag = styled.a`
   &:focus {
     color: #a11fff;
   }
+`;
+
+export const SkillsButton = styled.button`
+  justify-content: center;
+  background-color: #030007;
+  border-radius: 5px;
+  border: 2px solid #6b00b8;
+  box-sizing: border-box;
+  color: #a11fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  outline: none;
+  padding: 0.5rem 1.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: rgba(209, 173, 255, 0.55);
+    color: white;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const SkillsIcon = styled.a`
+  color: #fff;
+  font-size: 24px;
 `;

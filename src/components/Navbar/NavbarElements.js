@@ -118,13 +118,8 @@ export const NavBtnLink = styled(LinkRouter)`
   vertical-align: baseline;
   white-space: nowrap;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: rgba(209, 173, 255, 0.55);
     color: white;
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 0px rgba(0, 149, 255, 0.15);
   }
 `;

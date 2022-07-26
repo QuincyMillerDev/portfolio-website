@@ -24,8 +24,7 @@ export const Button = styled(Link)`
   vertical-align: baseline;
   white-space: nowrap;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: rgba(209, 173, 255, 0.55);
     color: white;
   }
