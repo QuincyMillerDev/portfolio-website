@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   SkillsContainer,
   SkillsWrapper,
-  SkillsRow,
   Row1,
   Row2,
   TextWrapper,
@@ -10,10 +9,27 @@ import {
   Subtitle,
   SkillsButton,
   ButtonWrapper,
-  SkillsIcon,
+  Skill1,
+  Skill2,
+  Skill3,
+  Skill4,
+  Skill5,
+  Skill6,
+  Skill7,
+  Skill8,
+  Skill9,
+  Skill10,
+  Skill11,
+  Skill12,
+  Skill13,
+  Skill14,
+  Skill15,
+  Skill16,
+  Skill17,
+  Skill18,
+  SkillsDescription,
+  SkillsContent,
 } from "./SkillsElements";
-import { useTransition, animated } from "react-spring";
-import "./SkillsStyles.css";
 
 import {
   FaPython,
@@ -33,97 +49,140 @@ import {
   SiMicrosoftazure,
   SiPostman,
   SiApachecassandra,
-  SiMicrosoftsqlserver,
   SiDjango,
+  SiAzurefunctions,
 } from "react-icons/si";
 
 import { TbCSharp } from "react-icons/tb";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 
 const SkillsSection = ({ id }) => {
-  const [item, setItems] = useState(false);
-  const transition = useTransition(item, {
-    key: item.key,
-    from: {
-      x: -600,
-      y: 800,
-      opacity: 0,
-      width: 10,
-      height: 10,
-    },
-    enter: (item) => async (next) => {
-      await next({ y: item.y, opacity: 0, delay: item.delay });
-      await next({ x: item.x, opacity: 1, width: 100, height: 100 });
-    },
-    leave: { x: 500, y: 800, opacity: 0 },
-  });
   return (
     <>
       <SkillsContainer id={id}>
         <SkillsWrapper>
-          <SkillsRow>
-            <Row1>
-              <TextWrapper>
-                <TopLine>02. Skills</TopLine>
-                <Subtitle>
-                  Here is an array of all the technologies and languages I've
-                  utilized, in order of increased experience from left to right.
-                </Subtitle>
-              </TextWrapper>
-              <ButtonWrapper>
-                <SkillsButton
-                  onClick={() => {
-                    setItems((v) =>
-                      v.length
-                        ? []
-                        : [
-                            { x: -360, y: -100, delay: 100 },
-                            { x: -360, y: -50, delay: 100 },
-                            { x: -360, y: 0, delay: 100 },
-
-                            { x: -160, y: -400, delay: 200 },
-                            { x: -160, y: -350, delay: 200 },
-                            { x: -160, y: -300, delay: 200 },
-
-                            { x: 40, y: -700, delay: 300 },
-                            { x: 40, y: -650, delay: 300 },
-                            { x: 40, y: -600, delay: 300 },
-
-                            { x: 240, y: -1000, delay: 400 },
-                            { x: 240, y: -950, delay: 400 },
-                            { x: 240, y: -900, delay: 400 },
-
-                            { x: 440, y: -1300, delay: 500 },
-                            { x: 440, y: -1250, delay: 500 },
-                            { x: 440, y: -1200, delay: 500 },
-
-                            { x: 640, y: -1600, delay: 600 },
-                            { x: 640, y: -1550, delay: 600 },
-                            { x: 640, y: -1500, delay: 600 },
-                          ]
-                    );
-                  }}
-                >
-                  Show Skills
-                </SkillsButton>
-              </ButtonWrapper>
-              <Row2>
-                <div className="container">
-                  {transition.map(({ item, props, key, style }) =>
-                    item ? (
-                      <animated.div style={style} className="item">
-                        {this.props.icons.map((Icon) => {
-                          return <Icon />;
-                        })}
-                      </animated.div>
-                    ) : (
-                      ""
-                    )
-                  )}
-                </div>
-              </Row2>
-            </Row1>
-          </SkillsRow>
+          <Row1>
+            <TextWrapper>
+              <TopLine>02. Skills</TopLine>
+              <Subtitle>
+                Here is an array of just a few of the technologies and languages
+                I've utilized so far in my professional, academic, and personal
+                projects. Most of these technologies were introduced to me over
+                the past Summer, where I got to incorporate them in a
+                professional environment to develop production-ready products.
+              </Subtitle>
+            </TextWrapper>
+            <Row2>
+              <Skill2>
+                <SkillsContent>
+                  <SiTypescript />
+                  <SkillsDescription>Typescript</SkillsDescription>
+                </SkillsContent>
+              </Skill2>
+              <Skill3>
+                <SkillsContent>
+                  <FaPython />
+                  <SkillsDescription>Python</SkillsDescription>
+                </SkillsContent>
+              </Skill3>
+              <Skill15>
+                <SkillsContent>
+                  <TbCSharp />
+                  <SkillsDescription>C#</SkillsDescription>
+                </SkillsContent>
+              </Skill15>
+              <Skill4>
+                <SkillsContent>
+                  <SiJavascript />
+                  <SkillsDescription>Javascript</SkillsDescription>
+                </SkillsContent>
+              </Skill4>
+              <Skill5>
+                <SkillsContent>
+                  <FaHtml5 />
+                  <SkillsDescription>HTML</SkillsDescription>
+                </SkillsContent>
+              </Skill5>
+              <Skill6>
+                <SkillsContent>
+                  <SiCss3 />
+                  <SkillsDescription>CSS</SkillsDescription>
+                </SkillsContent>
+              </Skill6>
+              <Skill1>
+                <SkillsContent>
+                  <FaAngular />
+                  <SkillsDescription>Angular</SkillsDescription>
+                </SkillsContent>
+              </Skill1>
+              <Skill7>
+                <SkillsContent>
+                  <FaReact />
+                  <SkillsDescription>React</SkillsDescription>
+                </SkillsContent>
+              </Skill7>
+              <Skill8>
+                <SkillsContent>
+                  <FaDocker />
+                  <SkillsDescription>Docker</SkillsDescription>
+                </SkillsContent>
+              </Skill8>
+              <Skill9>
+                <SkillsContent>
+                  <SiVisualstudio />
+                  <SkillsDescription>Visual Studio</SkillsDescription>
+                </SkillsContent>
+              </Skill9>
+              <Skill10>
+                <SkillsContent>
+                  <SiVisualstudiocode />
+                  <SkillsDescription>VSCode</SkillsDescription>
+                </SkillsContent>
+              </Skill10>
+              <Skill11>
+                <SkillsContent>
+                  <SiMicrosoftazure />
+                  <SkillsDescription>Azure</SkillsDescription>
+                </SkillsContent>
+              </Skill11>
+              <Skill12>
+                <SkillsContent>
+                  <FaGithub />
+                  <SkillsDescription>Git & Github</SkillsDescription>
+                </SkillsContent>
+              </Skill12>
+              <Skill13>
+                <SkillsContent>
+                  <SiPostman />
+                  <SkillsDescription>Postman</SkillsDescription>
+                </SkillsContent>
+              </Skill13>
+              <Skill14>
+                <SkillsContent>
+                  <SiApachecassandra />
+                  <SkillsDescription>Cassandra</SkillsDescription>
+                </SkillsContent>
+              </Skill14>
+              <Skill16>
+                <SkillsContent>
+                  <AiOutlineConsoleSql />
+                  <SkillsDescription>SQL</SkillsDescription>
+                </SkillsContent>
+              </Skill16>
+              <Skill17>
+                <SkillsContent>
+                  <SiDjango />
+                  <SkillsDescription>Django</SkillsDescription>
+                </SkillsContent>
+              </Skill17>
+              <Skill18>
+                <SkillsContent>
+                  <SiAzurefunctions />
+                  <SkillsDescription>Azure Functions</SkillsDescription>
+                </SkillsContent>
+              </Skill18>
+            </Row2>
+          </Row1>
         </SkillsWrapper>
       </SkillsContainer>
     </>

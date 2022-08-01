@@ -40,15 +40,12 @@ export const homeObjThree = {
   topLineColor: false,
   lightTextDesc: false,
   topLine: "03. Experience and Projects",
-  headLine: "filler text more filler",
+  headLine: "What have I built?",
   description: "subtitle filler text",
-  imgStart: false,
-  img: require("../../images/photo-3.JPG"),
-  alt: "error404",
   dark: false,
   primary: false,
   darkText: true,
-  textAlign: false,
+  textAlign: true,
   buttonAlign: true,
 };
 

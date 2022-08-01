@@ -7,8 +7,10 @@ import AboutSection from "../components/AboutSection";
 import SkillsSection from "../components/SkillSection";
 import { SkillsObject } from "../components/SkillSection/SkillsData";
 import { AboutObject } from "../components/AboutSection/AboutData";
-import { homeObjThree, homeObjFour } from "../components/InfoSection/Data";
+import { homeObjFour } from "../components/InfoSection/Data";
+import { ProjectObject } from "../components/ProjectSection/ProjectData";
 import Footer from "../components/footer";
+import ProjectSection from "../components/ProjectSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +32,7 @@ const Home = () => {
       <LandingSection />
       <AboutSection {...AboutObject} />
       <SkillsSection {...SkillsObject} />
-      <InfoSection {...homeObjThree} />
+      <ProjectSection {...ProjectObject} />
       <InfoSection {...homeObjFour} showButton={showButton} />
       <Footer />
     </>
