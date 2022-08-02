@@ -52,6 +52,7 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  text-align: center;
 `;
 
 export const Subtitle = styled.p`
@@ -59,7 +60,7 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: #010606;
-  text-align: left;
+  text-align: center;
 `;
 
 export const ATag = styled.a`
