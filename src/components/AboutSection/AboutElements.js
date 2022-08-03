@@ -76,6 +76,7 @@ export const ATag = styled.a`
   text-decoration-skip-ink: auto;
   font-weight: 600;
   line-height: 1.5;
+  color: #5F00A3;
   transition: var(--transition);
   &:hover,
   &:focus {
