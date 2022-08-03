@@ -67,7 +67,7 @@ const SkillsSection = ({ id }) => {
                 I've utilized so far in my professional, academic, and personal
                 projects. Most of these technologies were introduced to me over
                 the past Summer, where I got to incorporate them in a
-                professional environment to develop production-ready products.
+                professional environment to develop production-ready applications.
               </Subtitle>
             </TextWrapper>
             <Row2>
