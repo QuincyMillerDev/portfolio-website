@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   SkillsContainer,
   SkillsWrapper,
@@ -7,8 +7,6 @@ import {
   TextWrapper,
   TopLine,
   Subtitle,
-  SkillsButton,
-  ButtonWrapper,
   Skill1,
   Skill2,
   Skill3,
